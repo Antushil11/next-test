@@ -1,11 +1,18 @@
 "use client"
 
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Banner = () => {
 
+    const router = useRouter()
+
     const headlerButton =() =>{
-       const password = prompt("Enter TYour Password")
+       const password = prompt("Enter TYour Password");
+       if(password === "1234"){
+        console.log("1234")
+        router.push("/dashboard")
+       }
     }
   return (
     <div className="text-center space-y-4 bg-linear-60 to-sky-200 ">
