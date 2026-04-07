@@ -14,7 +14,7 @@ const Banner = () => {
     }
   };
   return (
-    <div className="text-center space-y-4 bg-linear-60 to-sky-200 ">
+    <div className="text-center py-16 space-y-4 bg-linear-60 to-sky-200 ">
       <h2 className="text-4xl font-bold">Wellcome to Dev-story</h2>
       <button
         onClick={headlerButton}
